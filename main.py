@@ -18,7 +18,7 @@ while not game_is_finished:
     guess = input("Guess a letter: ").lower()
 
     #Use the clear()
-    os.system('clear' if os.name == 'nt' else 'clear')
+    os.system('clear' if os.name == 'Linux' else 'clear')
 
     if guess in display:
         print(f"You've already guessed {guess}")
